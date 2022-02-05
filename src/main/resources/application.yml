@@ -1,0 +1,17 @@
+## content of /src/main/resources/application.yml
+spring:
+  datasource:
+    url: jdbc:mariadb://192.168.11.2:3306/compta
+    username: root
+    password: supersecret
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+server:
+  port: 8095
